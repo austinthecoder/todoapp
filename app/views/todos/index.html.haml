@@ -1,0 +1,9 @@
+= form_for todo do |f|
+  = f.label :description, 'To-do'
+  = f.text_field :description
+  %button Add
+
+#todo_list
+  %ul
+    - todos.each do |todo|
+      %li= todo
